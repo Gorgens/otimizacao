@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			const size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"># Ficha Ordenamento e PL
+tag: #ficha
+</script></section><section  data-markdown><script type="text/template">
+Os primeiros trabalhos que registraram a utilização da programação linear como técnica para resolver problemas de gestão florestal foram publicados na década de 1960. Foi, entretanto, em 1971 que pesquisadores da Universidade da Georgia em colaboração com a indústria de celulose do sul dos EUA, iniciaram o uso extensivo da programação linear no planejamento florestal.
+</script></section><section  data-markdown><script type="text/template">
+O objetivo da regulação florestal é escolher dentre as alternativas de manejo, aquela que maximiza (ou minimiza) algum critério, atendendo a restrições de demanda fabril, de área disponível, dentre outras. 
+</script></section><section  data-markdown><script type="text/template">
+Conceitualmente podemos formular um problema de regulação da seguinte forma:
+
+    Maximizar o valor do projeto florestal
+    S.a.    
+    Restrição de área a ser plantada
+    Restrição de produção num respectivo ano
+</script></section><section  data-markdown><script type="text/template">
+Analisando como são definidas as variáveis num problema de ordenamento, duas estruturas básicas podem ser utilizadas: Modelo I e Modelo II. A diferença entre as formulações I e II está na forma como são definidas as variáveis de decisão. No Modelo I definem-se variáveis de decisão para cada unidade de manejo que descrevem o manejo durante todo o horizonte de planejamento. Desta forma, predestinando as intervenções do início ao fim do horizonte de planejamento.
+</script></section><section  data-markdown><script type="text/template">
+O Modelo tipo I é formado por variável de decisão do tipo `$X_{ik}$` em que:
+
+i = unidade de manejo
+k = prescrição    
+</script></section><section ><section data-markdown><script type="text/template">
+A função objetivo deve buscar a alternativa de manejo a ser atribuída a cada unidade de manejo da empresa, que maximize o valor total do projeto, geralmente medido por algum critério financeiro:
+
+`$MaximizarVET = \sum_{i=1}^N \sum_{i=1}^M D_{ik} X_{ik}$`
+</script></section><section data-markdown><script type="text/template">
+`$MaximizarVET = \sum_{i=1}^N \sum_{i=1}^M D_{ik} X_{ik}$`
+
+em que `$D_{ik}$` é o valor atribuído à unidade de manejo i quando manejada seguindo a prescrição k. `$X_{ik}$` indica a área da unidade de manejo i associada à prescrição k. Sendo que k indica uma das M-ésimas prescrições de manejo e i indica uma das N-ésimas opções de unidades de manejo.
+</script></section></section><section  data-markdown><script type="text/template">
+No entanto, uma unidade de manejo só pode receber prescrições desde que não exceda a sua respectiva área. Esta limitação é de responsabilidade da restrição de área:
+
+`$\sum_{i=1}^M X_{ik} \leq A_i$`
+
+em que `$X_{ik}$` indica a área da unidade de manejo i associada à prescrição k. Ai indica a área em hectares da unidade de manejo i. Sendo que k indica uma das M-ésimas prescrições de manejo e i indica uma das N-ésimas opções de unidades de manejo.
+</script></section><section ><section data-markdown><script type="text/template">
+Pensando que um projeto florestal deve garantir o fornecimento de uma quantidade produtos madeireiros (e não-madeireiro) ao longo do horizonte de planejamento, define-se, portanto restrições de produção anual, que podem ser restrições de produção mínima, de produção máxima ou ambas. Lembrando que na existência de mais de um produto, cada um terá seu conjunto de restrições de produção. 
+</script></section><section data-markdown><script type="text/template">
+A construção matemática ficaria assim:
+
+`$\sum_{i=1}^N \sum_{i=1}^M V_{iktp} X_{ik} \geq V_{tp}$`
+
+
+`$\sum_{i=1}^N \sum_{i=1}^M V_{iktp} X_{ik} \leq V_{tp}$`
+
+em que `$X_{ik}$` indica a área da unidade de manejo i associada à prescrição k. `$V_{iktp}$` indica o volume por hectare produzido no ano t do produto p, pela unidade de manejo i, submetida à prescrição k. Sendo que k indica uma das M-ésimas prescrições de manejo, i indica uma das N-ésimas opções de unidades de manejo.
+</script></section></section><section  data-markdown><script type="text/template">
+Vale destacar, que nem sempre todas as restrições acima serão necessárias, bem como outras restrições podem ser incluídas. Dentre as restrições que podem ser incluídas, destacam-se: restrições de capacidade operacional e restrições de fluxo de caixa.
+</script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealCustomControls,
+        ],
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+
+		customcontrols: {
+			controls: [
+			]
+		},
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":true,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
