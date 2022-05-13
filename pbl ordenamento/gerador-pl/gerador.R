@@ -17,7 +17,7 @@ vet = function(
   producao, 
   cadastro, 
   receitaM3 = 70, 
-  taxa = 0.08){
+  taxa = 0.1){
 
   volCorte = producao %>%
     filter(Sitio == as.numeric(cadastro[cadastro$Talhao == talhao,'Sitio'])) %>%
@@ -53,7 +53,7 @@ for(t in cadastro$Talhao){
   for (c in idadeCorte){
     
     fo = paste(fo, round(vet(t, c, producao = producao, cadastro = cadastro, 
-                       receita = 70, taxa = 0.08), 2), paste(t,'_IC',c,sep=""), '+')
+                       receita = 70, taxa = 0.10), 2), paste(t,'_IC',c,sep=""), '+')
     
   }
 }
