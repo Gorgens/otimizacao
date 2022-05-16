@@ -4,34 +4,33 @@
 
 ### Aula 1
 
-- [Como se começa uma empresa florestal](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/Tarefa%20Como%20se%20monta%20uma%20empresa/index.html)
-- [Floresta normal](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/Ficha%20Floresta%20Normal/index.html)
+- [[OPA1T1 Tarefa Como se monta uma empresa]] #slide
+- [[OPA1F2 Ficha Floresta Normal]] #slide
 
 ### Aula 2
-
-- Tabela de crescimento
-- [Corte no ótimo volumétrico](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/Ficha%20Idade%20tecnica%20de%20corte/index.html)
+ [[OPA2T1 Tarefa Como se organiza uma empresa]] #slide
 
 ### Aula 3
-
-- Cadastro
-- [Como se organiza uma empresa](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/Tarefa%20Como%20se%20organiza%20uma%20empresa/index.html)
-- [Cadastro vs Inventário vs Tabela de Produção](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/Tarefa%20Cadastro%20x%20inventario%20x%20tabela%20de%20producao/index.html)
+- [[OPA3F1 Ficha Idade técnica de corte]] #slide
+- [[OPA3F2 Ficha Mapa da Empresa Easy Forest]] #slide
+- [[OPA3T3 Tarefa Plano abastecimento pela Idade tecnica de corte]] #em-sala 
 
 ### Aula 4
-
-- [Mapa da empresa](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/Ficha%20Mapa%20da%20Empresa%20Easy%20Forest/index.html)
-- [Plano de abastecimento pela ITC](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/Tarefa%20Plano%20abastecimento%20pela%20Idade%20tecnica%20de%20corte/index.html)
+- [[OPA4T1 Tarefa Plano de abastecimento]] #slide
+- [[OPA4T2  Tarefa Cadastro x inventário x tabela de produção]] #em-casa  #slide
 
 ### Aula 5
-
-- [Plano de abastecimento](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/Tarefa%20Plano%20de%20abastecimento/index.html)
+- [[OPA5F1 Ficha Valor presente]] #slide
+- R1 [[Cheat Sheet - Matemática financeira.pdf]] #read 
 
 ### Aula 6
-
-- [Valor presente](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/Ficha%20Valor%20presente/index.html)
-- [Projetos florestais](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/Ficha%20Avaliacao%20de%20projetos%20florestais/index.html)
+- [[OPA6F1 Ficha Avaliação de projetos florestais]] #slide 
 
 ### Aula 7
+- [[OPA7T1 Modelagem matemática]] #slide 
 
-- [Ordenamento florestal](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/Ficha%20Ordenamento%20florestal/index.html)
+### Aula 8
+- [[OPA8F1 Ficha Ordenamento florestal]] #slide 
+- [[OPA8T2Tarefa Modelo genérico ordenamento]] #slide
+
+(https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/Ficha%20Ordenamento%20florestal/index.html)
