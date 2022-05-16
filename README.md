@@ -15,11 +15,11 @@
 
 - [OPA3F1 Ficha Idade técnica de corte](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA3F1%20Ficha%20Idade%20tecnica%20de%20corte/index.html) #slide
 - [OPA3F2 Ficha Mapa da Empresa Easy Forest](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA3F2%20Ficha%20Mapa%20da%20Empresa%20Easy%20Forest/index.html) #slide
-- [OPA3T3 Tarefa Plano abastecimento pela Idade tecnica de corte](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA3T3%20Tarefa%20Plano%20abastecimento%20pela%20Idade%20tecnica%20de%20corte/index.html) #em-sala 
+- [OPA3T3 Tarefa Plano abastecimento pela Idade tecnica de corte](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA3T3%20Tarefa%20Plano%20abastecimento%20pela%20Idade%20tecnica%20de%20corte/index.html) #slide 
 
 ### Aula 4
 - [OPA4T1 Tarefa Plano de abastecimento](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA4T1%20Tarefa%20Plano%20de%20abastecimento/index.html) #slide
-- [OPA4T2  Tarefa Cadastro x inventário x tabela de produção](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA4T2%20%20Tarefa%20Cadastro%20x%20inventario%20x%20tabela%20de%20producao/index.html) #em-casa  #slide
+- [OPA4T2  Tarefa Cadastro x inventário x tabela de produção](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA4T2%20%20Tarefa%20Cadastro%20x%20inventario%20x%20tabela%20de%20producao/index.html) #slide
 
 ### Aula 5
 - [OPA5F1 Ficha Valor presente](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA5F1%20Ficha%20Valor%20presente/index.html) #slide
