@@ -29,8 +29,9 @@
 - [OPA6F1 Ficha Avaliação de projetos florestais](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA6F1%20Ficha%20Avaliacao%20de%20projetos%20florestais/index.html) #slide 
 
 ### Aula 7
-- [OPA7T1 Modelagem matemática](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7T1%20Tarefa%20Modelagem%20matematica/index.html) #slide 
+- [OPA7F1 Ficha Ordenamento florestal](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7F1%20Ficha%20Ordenamento%20florestal/index.html) #slide 
+- [OPA7T2 Modelagem matemática](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7T2%20Tarefa%20Modelagem%20matematica/index.html) #slide 
 
 ### Aula 8
-- [OPA8F1 Ficha Ordenamento florestal](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA8F1%20Ficha%20Ordenamento%20florestal/index.html) #slide 
-- [OPA8T2 Tarefa Modelo genérico ordenamento](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA8T2%Tarefa%20Modelo%20generico%20ordenamento/index.html) #slide
+
+- [OPA8T1 Tarefa Modelo genérico ordenamento](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA8T1%Tarefa%20Modelo%20generico%20ordenamento/index.html) #slide
