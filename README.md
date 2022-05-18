@@ -34,4 +34,4 @@
 
 ### Aula 8
 
-- [OPA8T1 Tarefa Modelo genérico ordenamento](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA8T1%Tarefa%20Modelo%20generico%20ordenamento/index.html) #slide
+- [OPA8T1 Tarefa Modelo genérico ordenamento](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA8T1%20Tarefa%20Modelo%20generico%20ordenamento/index.html) #slide
