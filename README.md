@@ -34,4 +34,18 @@
 
 ### Aula 8
 
-- [OPA8T1 Tarefa Modelo genérico ordenamento](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA8T1%20Tarefa%20Modelo%20generico%20ordenamento/index.html) #slide
+- [OPA7T2 Modelagem matemática](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7T2%20Tarefa%20Modelagem%20matematica/index.html) #slide 
+
+### Aula 9
+- [OPA7T2 Modelagem matemática](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7T2%20Tarefa%20Modelagem%20matematica/index.html) #slide 
+
+### Aula 10
+- [OPA10F1 Ficha Modelo ordenamento inteiro](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA10F1%20Ficha%20Modelo%20ordenamento%20inteiro/index.html)
+- [Modelo matemático](https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/gerador-pl/exemplo.lp) #dados 
+
+### Aula 11
+- [OPA11T1 Tarefa Compreendendo o modelo matemático](https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA11T1/OPA11T1%20Tarefa%20Compreendendo%20o%20modelo%20matematico.pdf) #read
+- [OPA11T2 Tarefa O modelo de ordenamento](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA11T2%20Tarefa%20O%20modelo%20de%20ordenamento/index.html) #slide
+
+### Aula 12
+- [OPA12T1 Tarefa Modelo generico ordenamento](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA12T1%20Tarefa%20Modelo%20generico%20ordenamento/index.html) #slide
