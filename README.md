@@ -38,7 +38,7 @@
 
 ### Aula 9
 - [OPA7T2 Modelagem matemática](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7T2%20Tarefa%20Modelagem%20matematica/index.html) #slide 
-
+- [OPA9F1 Funcao equacao e inequacao](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA9F1%20Funcao%20equacao%20e%20inequacao/index.html)
 ### Aula 10
 - [OPA10F1 Ficha Modelo ordenamento inteiro](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA10F1%20Ficha%20Modelo%20ordenamento%20inteiro/index.html)
 - [Modelo matemático](https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/gerador-pl/exemplo.lp) #dados 
