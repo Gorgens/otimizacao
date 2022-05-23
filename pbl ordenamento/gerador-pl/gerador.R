@@ -8,7 +8,7 @@ cadastro$anoPlantio = year(cadastro$Plantio)
 producao = read_xlsx('tabela_producao.xlsx')
 
 idadeCorte = c(5, 6, 7, 8)
-meta = 80000
+meta = 8000
 horizonte = 10
 
 vet = function(
@@ -52,8 +52,12 @@ fo = 'max:'
 for(t in cadastro$Talhao){
   for (c in idadeCorte){
     
+    areaTalhao = cadastro %>%
+      filter(Talhao == t) %>%
+      select(Area)
+    
     fo = paste(fo, round(vet(t, c, producao = producao, cadastro = cadastro, 
-                       receita = 70, taxa = 0.10), 2), paste(t,'_IC',c,sep=""), '+')
+                       receita = 70, taxa = 0.10), 2) * areaTalhao, paste(t,'_IC',c,sep=""), '+')
     
   }
 }
