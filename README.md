@@ -19,7 +19,7 @@
 
 ### Aula 4
 - [OPA4T1 Tarefa Plano de abastecimento](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA4T1%20Tarefa%20Plano%20de%20abastecimento/index.html) #slide
-- [OPA4T2  Tarefa Cadastro x inventário x tabela de produção](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA4T2%20%20Tarefa%20Cadastro%20x%20inventario%20x%20tabela%20de%20producao/index.html) #slide
+- [OPA4T2 Tarefa Cadastro x inventário x tabela de produção](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA4T2%20%20Tarefa%20Cadastro%20x%20inventario%20x%20tabela%20de%20producao/index.html) #slide
 
 ### Aula 5
 - [OPA5F1 Ficha Valor presente](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA5F1%20Ficha%20Valor%20presente/index.html) #slide
@@ -29,16 +29,17 @@
 - [OPA6F1 Ficha Avaliação de projetos florestais](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA6F1%20Ficha%20Avaliacao%20de%20projetos%20florestais/index.html) #slide 
 
 ### Aula 7
-- [OPA7F1 Ficha Ordenamento florestal](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7F1%20Ficha%20Ordenamento%20florestal/index.html) #slide 
-- [OPA7T2 Modelagem matemática](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7T2%20Tarefa%20Modelagem%20matematica/index.html) #slide 
+- [OPA7F1 Ficha Ficha Ordenamento florestal](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7F1%20Ficha%20Ordenamento%20florestal/index.html) #slide 
+- [OPA7T2 Tarefa Modelagem matemática](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7T2%20Tarefa%20Modelagem%20matematica/index.html) #slide 
 
 ### Aula 8
 
-- [OPA7T2 Modelagem matemática](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7T2%20Tarefa%20Modelagem%20matematica/index.html) #slide 
+- [OPA7T2 Tarefa Modelagem matemática](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7T2%20Tarefa%20Modelagem%20matematica/index.html) #slide 
 
 ### Aula 9
-- [OPA7T2 Modelagem matemática](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7T2%20Tarefa%20Modelagem%20matematica/index.html) #slide 
-- [OPA9F1 Funcao equacao e inequacao](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA9F1%20Funcao%20equacao%20e%20inequacao/index.html)
+- [OPA7T2 Tarefa Modelagem matemática](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA7T2%20Tarefa%20Modelagem%20matematica/index.html) #slide 
+- [OPA9F1 Ficha Funcao equacao e inequacao](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA9F1%20Funcao%20equacao%20e%20inequacao/index.html)
+
 ### Aula 10
 - [OPA10F1 Ficha Modelo ordenamento inteiro](https://htmlpreview.github.io/?https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/OPA10F1%20Ficha%20Modelo%20ordenamento%20inteiro/index.html)
 - [Modelo matemático](https://github.com/Gorgens/otimizacao/blob/main/pbl%20ordenamento/gerador-pl/exemplo.lp) #dados 
