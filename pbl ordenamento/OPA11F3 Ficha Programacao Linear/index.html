@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			const size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"># Programação linear
+#ficha 
+</script></section><section ><section data-markdown><script type="text/template">
+A palavra programação nos induz a pensar na necessidade de um programa computacional que utilize um conjunto de instruções que nos permita resolver os problemas. 
+</script></section><section data-markdown><script type="text/template">
+É fato que a maioria dos problemas de programação matemática é resolvida em computadores, mas isto não quer dizer que essa seja a única maneira de resolver esses problemas. A solução computacional é necessária e conveniente quando os problemas envolvem um número muito grande de variáveis. 
+</script></section><section data-markdown><script type="text/template">
+A princípio, todos os problemas de programação matemática poderiam ser resolvidos com o simples uso de um lápis e papel. Mas o número de iterações necessárias aumenta muito conforme aumenta o número de variáveis envolvidas no modelo.
+</script></section><section data-markdown><script type="text/template">
+Para problemas relativamente simples, é possível obter uma solução analítica com recursos bastante simples de álgebra. Um algoritmo é um conjunto de operações implementadas de acordo com uma seqüência pré-definida. 
+</script></section><section data-markdown><script type="text/template">
+A partir de uma solução inicial, o algoritmo busca uma nova solução melhor que a anterior. A seqüência de operações que conduz a uma nova solução é chamada iteração. As iterações são interrompidas apenas quando um pré determinado critério de otimalidade é satisfeito.
+</script></section><section data-markdown><script type="text/template">
+O principal desafio em qualquer técnica de otimização é encontrar uma solução ótima sem ter que recorrer a uma busca exaustiva de todas as possíveis soluções. Em muitos casos, as possíveis soluções são infinitas. Os algoritmos de programação matemática são desenhados para acelerar a busca e ao mesmo tempo garantir uma solução ótima.
+</script></section></section><section ><section data-markdown><script type="text/template">
+Uma forma concisa de resumir as intenções por trás do uso de modelos de programação matemática é dizer que a programação matemática se preocupa com a alocação ótima de recursos escassos entre atividades alternativas. 
+</script></section><section data-markdown><script type="text/template">
+Tomadores de decisão raramente estão interessados nas soluções propriamente ditas, mas sim em informação na qual possam basear as suas decisões. Uma análise de programação linear propicia parte dessa informação, pois igualmente importante são as outras considerações não quantitativas do problema original que não puderam ser incorporadas no modelo matemático. 
+</script></section><section data-markdown><script type="text/template">
+É verdade que os números representando uma solução ótima são de algum interesse, mas só até o ponto onde o modelo matemático consegue incorporar a realidade. Qualquer modelo matemático representa somente uma visão limitada do sistema real, sendo este o alvo do nosso interesse, não o modelo.
+</script></section></section><section ><section data-markdown><script type="text/template">
+Assuma que: 
+
+(1) Existe um problema de gestão para ser resolvido, e esse problema incorpora todas as características que definem um problema de programação matemática. 
+</script></section><section data-markdown><script type="text/template">
+(2) Um modelo de programação matemática pode ser desenvolvido para servir como abstração do sistema em estudo. Esse modelo inclui meios de se avaliar as possíveis soluções em termos do critério de otimização (isto é, do objetivo) e considera as limitações de recursos existentes. 
+</script></section><section data-markdown><script type="text/template">
+(3) A solução ótima para o problema de programação matemática pode ser obtida numericamente por meio de um algoritmo.
+</script></section><section data-markdown><script type="text/template">
+Uma das técnicas de otimização mais utilizadas é a programação linear. O modelo matemático para ser otimizado por esta técnica deve possuir quatro premissas:
+
+-   Proporcionalidade
+-   Aditividade
+-   Divisibilidade
+-   Certeza
+</script></section></section><section  data-markdown><script type="text/template">
+Um problema de PL ao ser resolvido pode resultar em:
+
+- apenas uma solução ótima
+- múltiplas soluções ótimas
+- não ter uma solução
+
+</script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealCustomControls,
+        ],
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+
+		customcontrols: {
+			controls: [
+			]
+		},
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":true,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
